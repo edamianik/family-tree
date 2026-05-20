@@ -1,0 +1,222 @@
+export type Person = {
+  id: string
+  name: string
+  birthDate: string | null
+  deathDate: string | null
+  location: string
+  photo: string
+  spouseIds: string[]
+  childIds: string[]
+  notes: string
+}
+
+export type FamilyData = {
+  familyName: string
+  rootId: string
+  people: Person[]
+}
+
+export const familyData: FamilyData = {
+  familyName: 'Damiani Family Tree',
+  rootId: 'p1',
+  people: [
+    {
+      id: 'p1',
+      name: 'Hans Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Austria',
+      photo: '',
+      spouseIds: ['p2'],
+      childIds: ['p3'],
+      notes: 'Family patriarch. Replace this with your own notes.'
+    },
+    {
+      id: 'p2',
+      name: 'Thereza Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Austria',
+      photo: '',
+      spouseIds: ['p1'],
+      childIds: ['p3'],
+      notes: 'Family matriarch.'
+    },
+    {
+      id: 'p3',
+      name: 'João Damianik (Johann Damianik)',
+      birthDate: 'Mar 28 1883',
+      deathDate: '26 May 1950',
+      location: 'Graz, Steiermark, Austria',
+      photo: '',
+      spouseIds: ['p4'],
+      childIds: ['p5', 'p6', 'p7'],
+      notes: 'Moved to Brazil.'
+    },
+    {
+      id: 'p4',
+      name: 'Luiza Damianik Aloisia Fauster',
+      birthDate: 'May 05 1887',
+      deathDate: null,
+      location: 'Untertiefenbach (Fehring), Südoststeiermark, Steiermark, Österreich',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p5',
+      name: 'Otto Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p6',
+      name: 'Margarida Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p7',
+      name: 'João Damianik Filho (Johann Alois Damianik)',
+      birthDate: 'Nov 21 1906',
+      deathDate: null,
+      location: 'Waasen, Austria',
+      photo: '',
+      spouseIds: ['p8'],
+      childIds: ['p9', 'p10', 'p11'],
+      notes: ''
+    },
+    {
+      id: 'p8',
+      name: 'Elfriede Milda Damianik (Gampe)',
+      birthDate: '27 Jul 1909',
+      deathDate: '27 May 2003',
+      location: 'Niedercunnersdof, Germany',
+      photo: '',
+      spouseIds: ['p7'],
+      childIds: ['p9', 'p10', 'p11'],
+      notes: ''
+    },
+    {
+      id: 'p9',
+      name: 'João Damianik Neto',
+      birthDate: '1883',
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p10',
+      name: 'Ingeborg Sternecker (Damianik)',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: ['p12'],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p11',
+      name: 'Roberto Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Brazil',
+      photo: '',
+      spouseIds: ['p13', 'p14'],
+      childIds: ['p15', 'p16', 'p17', 'p18'],
+      notes: ''
+    },
+    {
+      id: 'p12',
+      name: 'Egon Sternecker',
+      birthDate: null,
+      deathDate: null,
+      location: 'Brazil',
+      photo: '',
+      spouseIds: ['p10'],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p14',
+      name: 'Mirian Maia Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: ['p11'],
+      childIds: ['p18'],
+      notes: ''
+    },
+    {
+      id: 'p13',
+      name: 'Ivone Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: ['p13'],
+      childIds: ['p15', 'p16', 'p17'],
+      notes: ''
+    },
+    {
+      id: 'p15',
+      name: 'Suzanne Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p16',
+      name: 'Suzanne Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p17',
+      name: 'Suzanne Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    },
+    {
+      id: 'p18',
+      name: 'Suzanne Damianik',
+      birthDate: null,
+      deathDate: null,
+      location: 'Rio de Janeiro, Brazil',
+      photo: '',
+      spouseIds: [],
+      childIds: [],
+      notes: ''
+    }
+  ]
+}

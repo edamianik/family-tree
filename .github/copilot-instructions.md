@@ -1,0 +1,3 @@
+- Scaffold a new family-tree React + TypeScript app in this workspace.
+- Create source files under `src/` and configuration files at the project root.
+- Ensure `README.md` exists with basic usage instructions.
